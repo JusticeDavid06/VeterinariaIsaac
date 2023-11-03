@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Veterinaria Mascotitas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            margin: 0 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #contact-form {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        label, input {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #gallery {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #gallery h2 {
+            font-size: 24px;
+        }
+
+        #gallery-images {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #gallery-images img {
+            max-width: 30%;
+            height: auto;
+            margin: 10px;
+        }
+
+        #about {
+            display: flex;
+        }
+
+        #about-text {
+            flex: 1;
+            padding: 20px;
+        }
+
+        #about img {
+            max-width: 50%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Veterinaria Mascotitas</h1>
+        <nav>
+            <a href="#about">Acerca de Nosotros</a>
+            <a href="#services">Servicios</a>
+            <a href="#gallery">Galería</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="container" id="about">
+        <div id="about-text">
+            <h2>Acerca de Nosotros</h2>
+            <p>Somos una clínica veterinaria comprometida con el bienestar de tus mascotas. Contamos con un equipo de profesionales altamente calificados para brindar la mejor atención y cuidado a tus amigos peludos.</p>
+        </div>
+        <img src="veterinario_perro.png" alt="Veterinaria Mascotitas">
+    </div>
+
+    <div class="container" id="services">
+        <h2>Servicios</h2>
+        <p>Ofrecemos una amplia gama de servicios para cuidar de tu mascota, incluyendo:</p>
+        <ul>
+            <li>Consultas veterinarias</li>
+            <li>Vacunaciones</li>
+            <li>Cirugías</li>
+            <li>Odontología</li>
+            <li>Y mucho más</li>
+        </ul>
+    </div>
+
+    <div class="container" id="gallery">
+        <h2>Galería de Mascotas</h2>
+        <div id="gallery-images">
+            <img src="perro.jpg" alt="Mascota 1">
+            <img src="gato.jpg" alt="Mascota 2">
+            <img src="conejo.jpg" alt="Mascota 3">
+        </div>
+        <!-- Agrega más imágenes de mascotas aquí -->
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta o necesitas programar una cita? Completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.</p>
+        <div id="contact-form">
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
